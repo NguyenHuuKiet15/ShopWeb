@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script src="snow.js"></script>
+    <script src="./main.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.3-web/fontawesome-free-5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="register">
+        <header class="register__header">
+            <div class="grid-1">
+                <nav class="register__header-nav">
+                    <div class="register__header-nav-logo register__header-logo--separate">
+                        <a href="." class="header__logo-link">
+                            <img src="data:image/png;base64,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" alt="" class="header__logo-img-help">
+                        </a>
+                    </div>
+                    <div class="register__header-label">
+                        <a href="" class="header__help-link">
+                            Đăng ký
+                        </a>
+                    </div>
+                    <a href="./help.html" class="register__header-nav-link">Bạn cần trợ giúp?</a>
+                </nav>
+            </div>
+        </header>
+        <div class="register__container">
+			<div class="container__body">
+                <div class="auth-form">
+                    <div class="auth-form-container">
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading">ĐĂNG KÝ</h3>
+                            <!-- <span class="auth-form__Switch-btn">Đăng nhập</span> -->
+                        </div>
+                        <div  class="auth-form__body">
+                            <form action="" method="POST" class="auth-form__group" id="form-1">
+                                <div class="form-group">
+                                    <input type="text" id="name" name="name" class="auth-form__input" placeholder="Tên tài khoản">
+                                    <span class="form-message"></span>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" id="email" name="email" class="auth-form__input" placeholder="Email tạo tài khoản">
+                                    <span class="form-message"></span>
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" id="password" name="password" class="auth-form__input" placeholder="Nhập Password">
+                                    <span class="form-message"></span>
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" id="password_confirm" name="password_confirm" class="auth-form__input" placeholder="Nhập lại Password">
+                                    <span class="form-message"></span>
+                                </div>   
+                            </form>
+                            <div class="auth-form__note">
+                                <p class="auth-form__policy-text">Bằng việc đăng ký vào web của chúng tôi, bạn đã đồng ý với chúng tôi về 
+                                    <a href="" class="auth-form__text-link">Điều khoản dịch vụ</a> &
+                                    <a href="" class="auth-form__text-link">Chính sách bảo mật</a>
+                                </p>
+                            </div>
+                            <div class="auth-form__controls">
+                              <a href="./index.html"><button class="btn auth-form__controls-back">TRỞ LẠI</button></a>
+                              <a href="#">  <button class="btn btn--primary">ĐĂNG KÝ</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="auth-form__social">
+                        <a href="" class="btn btn-size-s auth-form__social--facebook">
+                            <i class="fab fa-facebook auth-form__social-icon"></i>
+                            <span class="auth-form__social-title">Kết nối với facebook</span>
+                        </a>
+                        <a href="" class="btn btn-size-s auth-form__social--google">
+                            <i class="fab fa-google auth-form__social-icon"></i>
+                            <span class="auth-form__social-title">Kết nối với google</span>
+                        </a>
+                    </div>
+                    <div class="auth_form__transition t1">
+                        <span>Bạn đã có tài khoản?</span>
+                        <li class="auth_form__transition-item"> 
+                            <a href="./login.html" class="auth_form__transition-link">Đăng nhập</a>
+                        </li>
+                    </div>
+                </div>
+				
+            </div>
+			<div class="onggianoel">
+					<img src="assets/img/262134232_915583299095051_1933598106701692796_n.png" >
+				</div>
+			<canvas class="sky" id="sky">
+           		 
+			</canvas>
+        </div>
+        <footer class="chantrang">   <div class="grid">
+            <div class="grid__row">
+                <div class="grid__column-2-4">
+                    <h3 class="footer__heading">Chăm soc khách hàng</h3>
+                    <ul class="footer-list">
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Trung tâm trợ giúp</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">BullFish Shop</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Hướng dẫn mua hàng</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid__column-2-4">
+                    <h3 class="footer__heading">Giới thiệu</h3>
+                    <ul class="footer-list">
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Giới thiệu</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Tuyển dụng</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Điều khoản</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid__column-2-4">
+                    <h3 class="footer__heading">Danh mục</h3>
+                    <ul class="footer-list">
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">
+                                <i class="footer-item__icon fab fa-facebook-f"></i>
+                                Facebook
+                            </a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">
+                                <i class="footer-item__icon fab fa-instagram-square"></i>
+                                Instagram
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid__column-2-4">
+                    <h3 class="footer__heading">Theo dõi</h3>
+                    <ul class="footer-list">
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Quần Jeans</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Áo sơmi</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Giày sneakers</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Phụ kiện</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid__column-2-4">
+                    <h3 class="footer__heading">Vào của hàng trên ứng dụng</h3>
+                    <div class="footer__dowload">
+                        <img src="./assets/img/qrcode.jpg" alt="" class="footer__qr-img">
+                        <div class="footer__dowload-apps">
+                            <a href="" class="footer__dowload-apps-link">
+                                <img src="./assets/img/googleplay.png" alt="" class="footer__dowload-apps-img">
+                            </a>
+                            <a href="" class="footer__dowload-apps-link">
+                                <img src="./assets/img/appstore.png" alt="" class="footer__dowload-apps-img">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__ends">
+            <div class="grid">
+                <p class="footer__p">Nhóm Sinh Viên Cường - Kiệt</p>
+                <p class="footer__p">904/34/11,phường 3, đường Nguyễn Kiệm, quận Gò Vấp</p> 
+                <p class="footer__p">&#169 2021 - Bản quyền thuộc về môn thiết kế web</p>
+            </div>
+        </div>
+        </footer>
+    </div>
+
+    <script>
+       validator({
+            form: '#form-1',
+            rules: [
+                validator.isRequired('#name'),
+                validator.isEmail('#email'),
+                validator.minPass('#password', 6),
+                validator.checkComfirm('#password_confirm', function() {
+                    return document.querySelector('#form-1 #password').value;
+                }),
+            ]
+       });
+    </script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.3-web/fontawesome-free-5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="help">
+        <header class="help__header">
+            <div class="grid-1">
+                <nav class="help__header-nav">
+                    <div class="help__header-nav-logo help__header-logo--separate">
+                        <a href="." class="header__logo-link">
+                            <img src="data:image/png;base64,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" alt="" class="header__logo-img-help" alt="" class="header__logo-img-help">
+                        </a>
+                    </div>
+                    <div class="help__header-label">
+                        <a href="" class="header__help-link">
+                            Hỗ trợ
+                        </a>
+                    </div>
+                </nav>
+            </div>
+            <div class="help__header-body">
+                <h1 class="header-body__heading">
+                    Xin chào. Shop có thể giúp gì cho bạn?</h1>
+                <div class="header-body__search">
+                    <input type="text" placeholder="Đặt câu hỏi? Hoặc nhập từ khóa" class="header-body__search-input">
+                </div>    
+            </div>
+        </header>
+
+        <div class="help-container">
+            <div class="grid-1">
+                <div class="grid__row">
+                    <div class="grid__column-3">
+                        <div class="help-category">
+                            <h3 class="help-category__heading">DANH MỤC</h3>
+                            <ul class="help-category__list">
+                                <li class="help-category__item">
+                                    <a href="" class="help-category__link">Tài Khoản & Mục Khác</a>
+                                </li>
+                                <li class="help-category__item">
+                                    <a href="" class="help-category__link">Đơn Hàng & Thanh Toán</a>
+                                </li>
+                                <li class="help-category__item"> 
+                                    <a href="" class="help-category__link">Trả Hàng & Hoàn Tiền</a>
+                                </li>
+                                <li class="help-category__item">
+                                    <a href="" class="help-category__link">Bán Hàng & Đối Soát</a>
+                                </li>
+                                <li class="help-category__item">
+                                    <a href="" class="help-category__link">Vận Chuyển</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="grid__column-7">
+                        <h2 class="question__heading">CÂU HỎI THƯỜNG GẶP</h2>
+                        <ul class="questions__list">
+                            <li class="question__item">
+                                <a href="" class="question__item-link">Cập Nhật Về Ảnh Hưởng Của Dịch Covid Với Việc Giao/Nhận Hàng Shopee</a>
+                            </li>
+                            <li class="question__item">
+                                <a href="" class="question__item-link">Tại Sao Tài Khoản Của Tôi Bị Khóa / Bị Giới Hạn?</a>
+                            </li>
+                            <li class="question__item">
+                                <a href="" class="question__item-link">Hướng Dẫn Sử Dụng Mã Miễn Phí Vận Chuyển (Mã Freeship)</a>
+                            </li>
+                            <li class="question__item">
+                                <a href="" class="question__item-link">Cách Đăng Nhập Tài Khoản Khi Quên / Mất Mật Khẩu</a>
+                            </li>
+                            <li class="question__item">
+                                <a href="" class="question__item-link">Phương Thức Vận Chuyển Mới</a>
+                            </li>
+                            <li class="question__item">
+                                <a href="" class="question__item-link">Chưa Nhận Được Hàng / Đơn Hàng Cập Nhật Sai Thì Làm Sao?</a>
+                            </li>
+                            <li class="question__item">
+                                <a href="" class="question__item-link">Cách Tìm Kiếm Sản Phẩm Có Áp Dụng GrabExpress</a>
+                            </li>
+                            <li class="question__item">
+                                <a href="" class="question__item-link">[Người Bán] Tôi Cần Làm Gì Khi Có Đơn Hàng Mới?</a>
+                            </li>
+                            <li class="question__item">
+                                <a href="" class="question__item-link">Đơn Vị Vận Chuyển Giao Hàng Cho Người Mua</a>
+                            </li>
+                        </ul>
+                        <div class="help-chat">
+                            <h4 class="help-chat__heading">Chat với shop</h4>
+                            <div class="help-chat__contact">
+                                <a class="help-chat__contact-link">
+                                    <i class="help-chat__contact-icon fas fa-phone-square"></i>
+                                    <div class="help-chat__contact-label">
+                                        <p class="help-chat__contact-name">Điện thoại</p>
+                                        <p class="help-chat__contact-content">Gọi ngay 1922025565456</p>
+                                    </div>
+                                </a>
+                                <a class="help-chat__contact-link">
+                                    <i class="help-chat__contact-icon fas fa-envelope"></i>
+                                    <div class="help-chat__contact-label">
+                                        <p class="help-chat__contact-name">E-mail</p>
+                                        <p class="help-chat__contact-content">huukiet22@gmail.com</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="help-footer">
+            <div class="grid-1">
+                <div class="help-footer-dep">
+                    <h5 class="help-footer__heading">&#169 2021 BullFish.Tất cả các quyền được bảo lưu</h5>
+                    <ul class="help-footer__list">
+                        <li class="help-footer__item">
+                            <a href="" class="help-footer__link help-footer__item--separate">Điều khoản BullShop</a>
+                        </li>
+                        <li class="help-footer__item help-footer__item--separate">
+                            <a href="" class="help-footer__link">Chính sách riêng tư</a>
+                        </li>
+                        <li class="help-footer__item">
+                            <a href="" class="help-footer__link ">Điều khoản dịch vụ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
